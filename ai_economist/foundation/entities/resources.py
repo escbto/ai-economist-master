@@ -67,4 +67,4 @@ class Coin(Resource):
 class Widget(Resource):
     name = "Widget"
     color = [1, 1, 1]
-    collectible = False # <--- Goes in agent inventory, but not in the world  
+    collectible = False 
