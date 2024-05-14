@@ -7,7 +7,11 @@ Created on Mon May 13 11:04:24 2024
 
 
 import numpy as np
-from ai_economist.foundation.base.base_component import BaseComponent, component_registry
+from ai_economist.foundation.base.base_component import (
+    BaseComponent,
+    component_registry,
+)
+from ai_economist.foundation.entities import resource_registry
 
 @component_registry.add
 class BuyWidgetFromVirtualStore(BaseComponent):
