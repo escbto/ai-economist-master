@@ -13,6 +13,7 @@ from . import (
     move,
     redistribution,
     simple_labor,
+     BuyWidgetFromVirtualStore,
 )
 
 # Import files that add Component class(es) to component_registry
