@@ -63,7 +63,7 @@ class LayoutFromFile(BaseEnvironment):
 
     name = "layout_from_file/simple_wood_and_stone"
     agent_subclasses = ["BasicMobileAgent", "BasicPlanner"]
-    required_entities = ["Wood", "Stone", "Water"]
+    required_entities = ["Wood", "Stone", "Water", "Widget"]
 
     def __init__(
         self,
@@ -126,7 +126,8 @@ class LayoutFromFile(BaseEnvironment):
         )
         assert 0 <= self.layout_specs["Wood"]["regen_weight"] <= 1
         assert 0 <= self.layout_specs["Stone"]["regen_weight"] <= 1
-
+        assert 0 <= self.layout_specs["Widget"]["regen_weight"] <= 1
+        
         # How much coin do agents begin with at upon reset
         self.starting_agent_coin = float(starting_agent_coin)
         assert self.starting_agent_coin >= 0.0
@@ -381,7 +382,7 @@ class LayoutFromFile(BaseEnvironment):
         regeneration.
         """
 
-        resources = ["Wood", "Stone"]
+        resources = ["Wood", "Stone", "Widget"]
 
         for resource in resources:
             d = 1 + (2 * self.layout_specs[resource]["regen_halfwidth"])
