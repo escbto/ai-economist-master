@@ -62,3 +62,9 @@ class Coin(Resource):
     name = "Coin"
     color = np.array([229, 211, 82]) / 255.0
     collectible = False
+
+@resource_registry.add
+class Widget(Resource):
+    name = "Widget"
+    color = [1, 1, 1]
+    collectible = False # <--- Goes in agent inventory, but not in the world  
