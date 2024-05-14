@@ -64,6 +64,14 @@ class Coin(Resource):
     collectible = False
 
 @resource_registry.add
+class Coin(Resource):
+    """Coin resource. Included in all environments by default. Not collectible."""
+
+    name = "Coin"
+    color = np.array([229, 211, 82]) / 255.0
+    collectible = False
+
+@resource_registry.add
 class Widget(Resource):
     name = "Widget"
     color = [1, 1, 1]
