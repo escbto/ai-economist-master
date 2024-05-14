@@ -126,7 +126,7 @@ class LayoutFromFile(BaseEnvironment):
         )
         assert 0 <= self.layout_specs["Wood"]["regen_weight"] <= 1
         assert 0 <= self.layout_specs["Stone"]["regen_weight"] <= 1
-        
+     
         
         # How much coin do agents begin with at upon reset
         self.starting_agent_coin = float(starting_agent_coin)
