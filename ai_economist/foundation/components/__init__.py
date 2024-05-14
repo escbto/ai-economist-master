@@ -9,7 +9,7 @@ from ai_economist.foundation.base.base_component import component_registry
 from . import (
     build,
     continuous_double_auction,
-    BuyWidgetFromVirtualStore,
+    buywidgetfromvirtualstore,
     move,
     redistribution,
     simple_labor,    
