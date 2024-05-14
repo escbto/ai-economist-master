@@ -5,7 +5,7 @@ Created on Mon May 13 11:04:24 2024
 @author: asus
 """
 
-
+import random
 import numpy as np
 from ai_economist.foundation.base.base_component import BaseComponent, component_registry
 
