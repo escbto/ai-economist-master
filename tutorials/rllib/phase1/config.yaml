@@ -109,11 +109,11 @@ trainer:
   metrics_smoothing_episodes: null
   multiagent: null
   no_done_at_end: false
-  num_envs_per_worker: 1
+  num_envs_per_worker: 2
   num_gpus: 0
   num_gpus_per_worker: 0
   num_sgd_iter: 1
-  num_workers: 4
+  num_workers: 2
   observation_filter: NoFilter
   rollout_fragment_length: 200
   seed: null
