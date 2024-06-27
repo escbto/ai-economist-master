@@ -33,7 +33,7 @@ env:
   energy_warmup_constant: 10000
   energy_warmup_method: auto
   env_layout_file: quadrant_25x25_20each_30clump.txt
-  episode_length: 3000
+  episode_length: 1000
   fixed_four_skill_and_loc: true
   flatten_masks: true
   flatten_observations: true
@@ -51,7 +51,7 @@ env:
 general:
   ckpt_frequency_steps: 750000
   cpus: 15
-  episodes: 5
+  episodes: 30
   gpus: 0
   restore_tf_weights_agents: ''
   restore_tf_weights_planner: ''
@@ -129,4 +129,4 @@ trainer:
     inter_op_parallelism_threads: 2
     intra_op_parallelism_threads: 24
     log_device_placement: false
-  train_batch_size: 1500
+  train_batch_size: 6000
