@@ -51,7 +51,7 @@ env:
 general:
   ckpt_frequency_steps: 750000
   cpus: 15
-  episodes: 58
+  episodes: 25000
   gpus: 0
   restore_tf_weights_agents: ''
   restore_tf_weights_planner: ''
@@ -129,4 +129,4 @@ trainer:
     inter_op_parallelism_threads: 2
     intra_op_parallelism_threads: 24
     log_device_placement: false
-  train_batch_size: 3000
+  train_batch_size: 6000
