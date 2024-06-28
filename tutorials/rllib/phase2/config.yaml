@@ -54,7 +54,7 @@ general:
   cpus: 15
   episodes: 25000
   gpus: 0
-  restore_tf_weights_agents: phase1/ckpts/agent.tf.weights.global-step-25000000 # path to phase 1 agent policy checkpoint
+  restore_tf_weights_agents: phase1/ckpts/agent.tf.weights.global-step-36000 # path to phase 1 agent policy checkpoint
   restore_tf_weights_planner: ''
   train_planner: true
 agent_policy:
